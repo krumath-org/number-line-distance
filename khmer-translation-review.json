@@ -1,0 +1,763 @@
+{
+  "meta": {
+    "project": "number-line-distance",
+    "fork": "https://github.com/krumath-org/number-line-distance",
+    "source_en_files": [
+      "number-line-distance/number-line-distance-strings_en.json",
+      "number-line-common/number-line-common-strings_en.json",
+      "joist/joist-strings_en.json",
+      "scenery-phet/scenery-phet-strings_en.json"
+    ],
+    "locale_target": "km",
+    "generated": "2026-10-02",
+    "how_to_fill": [
+      "Fill empty \"khmer\" fields. Do not rename keys or change \"english\".",
+      "Keep placeholders {{likeThis}} and {0} unchanged inside Khmer text.",
+      "Keep HTML tags (<sub>, <span>, <br>) in math patterns and pointsOffScale; translate only surrounding words if any.",
+      "PRIORITY 1 — sim_visible_ui: title, Explore/Generic screens, checkboxes, distance modes, scene object names, unit words, distance-description sentences, Preferences→Simulation Terminology (all EMPTY — please translate).",
+      "PRIORITY 1b — common_visible_ui: Generic-screen range labels + \"Points off scale!\" (EMPTY — please translate). Source: number-line-common.",
+      "PRIORITY 2 — shared_joist_chrome / shared_scenery_phet_chrome: PhET menu, About/Credits, Preferences tabs, Reset All (prefilled from number-play — review/adjust).",
+      "Screens: Explore (Distance / Temperature / Elevation scenes), Generic. Preferences Simulation tab: Terminology (Directed Distance vs Displacement). No separate Game/practice levels in this sim — Explore is the practice surface.",
+      "Math symbols (x, y, A, B) and unit abbreviations (m, °C, E, W) can stay Latin if preferred.",
+      "No sim-specific a11y string block in number-line-distance-strings_en.json.",
+      "Backend/dev-only strings omitted.",
+      "Send this file back when ready; we will apply into babel as *-strings_km.json (+ joist/scenery-phet/number-line-common as needed)."
+    ],
+    "counts": {
+      "sim_visible_ui": 45,
+      "common_visible_ui": 2,
+      "shared_joist_chrome": 60,
+      "shared_scenery_phet_chrome": 15,
+      "total": 122,
+      "empty_khmer_needing_translation": 0
+    }
+  },
+  "sim_visible_ui": {
+    "number-line-distance.title": {
+      "english": "Number Line: Distance",
+      "khmer": "បន្ទាត់ចំនួន៖ ចម្ងាយ",
+      "category": "title"
+    },
+    "screen.explore": {
+      "english": "Explore",
+      "khmer": "រុករក",
+      "category": "screen_name",
+      "notes": "Home/nav screen with Distance / Temperature / Elevation scenes (practice/explore)."
+    },
+    "screen.generic": {
+      "english": "Generic",
+      "khmer": "ទូទៅ",
+      "category": "screen_name",
+      "notes": "Abstract number-line screen (horizontal/vertical ranges)."
+    },
+    "pointLabels": {
+      "english": "Point Labels",
+      "khmer": "ស្លាកសម្គាល់ចំណុច",
+      "category": "checkbox_control",
+      "notes": "Checkbox on control panel."
+    },
+    "distanceLabels": {
+      "english": "Distance Labels",
+      "khmer": "ស្លាកសម្គាល់ចម្ងាយ",
+      "category": "checkbox_control",
+      "notes": "Checkbox on control panel."
+    },
+    "distanceDescription": {
+      "english": "Distance Description",
+      "khmer": "ការពិពណ៌នាពីចម្ងាយ",
+      "category": "checkbox_control",
+      "notes": "Checkbox that shows the sentence under the number line."
+    },
+    "distanceStatement": {
+      "english": "Distance Statement",
+      "khmer": "ល្បះបង្ហាញចម្ងាយ",
+      "category": "accordion_box",
+      "notes": "Accordion box title on Explore/Generic screens."
+    },
+    "tickMarks": {
+      "english": "Tick Marks",
+      "khmer": "គំនូសខ្នាត",
+      "category": "checkbox_control",
+      "notes": "Checkbox on control panel."
+    },
+    "absoluteValue": {
+      "english": "Absolute Value",
+      "khmer": "តម្លៃដាច់ខាត",
+      "category": "distance_mode",
+      "notes": "Radio option for absolute-distance mode."
+    },
+    "directedDistance": {
+      "english": "Directed Distance",
+      "khmer": "ចម្ងាយមានទិសដៅ",
+      "category": "distance_mode",
+      "notes": "Radio option for distance mode (UI + Preferences)."
+    },
+    "symbol.x": {
+      "english": "x",
+      "khmer": "x",
+      "category": "math_symbol",
+      "notes": "Math variable. Usually kept as Latin x."
+    },
+    "symbol.y": {
+      "english": "y",
+      "khmer": "y",
+      "category": "math_symbol",
+      "notes": "Math variable. Usually kept as Latin y."
+    },
+    "symbol.east": {
+      "english": "E",
+      "khmer": "E",
+      "category": "compass_symbol",
+      "notes": "Abbreviation for East on the distance scene number line. Can stay Latin E if preferred."
+    },
+    "symbol.west": {
+      "english": "W",
+      "khmer": "W",
+      "category": "compass_symbol",
+      "notes": "Abbreviation for West on the distance scene number line. Can stay Latin W if preferred."
+    },
+    "symbol.meters": {
+      "english": "m",
+      "khmer": "m",
+      "category": "unit_symbol",
+      "notes": "Unit abbreviation on distance scene. Can stay m."
+    },
+    "symbol.degreesCelsius": {
+      "english": "°C",
+      "khmer": "°C",
+      "category": "unit_symbol",
+      "notes": "Temperature unit symbol. Can stay °C."
+    },
+    "symbol.A": {
+      "english": "A",
+      "khmer": "A",
+      "category": "location_label",
+      "notes": "Temperature scene location label. Can stay A."
+    },
+    "symbol.B": {
+      "english": "B",
+      "khmer": "B",
+      "category": "location_label",
+      "notes": "Temperature scene location label. Can stay B."
+    },
+    "unit": {
+      "english": "unit",
+      "khmer": "ឯកតា",
+      "category": "unit_word"
+    },
+    "units": {
+      "english": "units",
+      "khmer": "ឯកតា",
+      "category": "unit_word"
+    },
+    "genericAbsoluteDistanceTemplate": {
+      "english": "{{secondaryPointControllerLabel}} and {{primaryPointControllerLabel}} are {{difference}} {{units}} apart.",
+      "khmer": "{{secondaryPointControllerLabel}} និង {{primaryPointControllerLabel}} មានចម្ងាយឃ្លាតពីគ្នា {{difference}} {{units}}។",
+      "category": "distance_description_template",
+      "notes": "Keep placeholders {{secondaryPointControllerLabel}}, {{primaryPointControllerLabel}}, {{difference}}, {{units}}."
+    },
+    "genericDirectedPositiveDistanceTemplate": {
+      "english": "{{secondaryPointControllerLabel}} is {{difference}} {{units}} more positive than {{primaryPointControllerLabel}}.",
+      "khmer": "{{secondaryPointControllerLabel}} មានតម្លៃវិជ្ជមានជាង {{primaryPointControllerLabel}} ចំនួន {{difference}} {{units}}។",
+      "category": "distance_description_template",
+      "notes": "Keep placeholders {{secondaryPointControllerLabel}}, {{primaryPointControllerLabel}}, {{difference}}, {{units}}."
+    },
+    "genericDirectedNegativeDistanceTemplate": {
+      "english": "{{secondaryPointControllerLabel}} is {{difference}} {{units}} more negative than {{primaryPointControllerLabel}}.",
+      "khmer": "{{secondaryPointControllerLabel}} មានតម្លៃអវិជ្ជមានជាង {{primaryPointControllerLabel}} ចំនួន {{difference}} {{units}}។",
+      "category": "distance_description_template",
+      "notes": "Keep placeholders {{secondaryPointControllerLabel}}, {{primaryPointControllerLabel}}, {{difference}}, {{units}}."
+    },
+    "person": {
+      "english": "person",
+      "khmer": "មនុស្ស",
+      "category": "scene_object"
+    },
+    "house": {
+      "english": "house",
+      "khmer": "ផ្ទះ",
+      "category": "scene_object"
+    },
+    "meter": {
+      "english": "meter",
+      "khmer": "ម៉ែត្រ",
+      "category": "unit_word"
+    },
+    "meters": {
+      "english": "meters",
+      "khmer": "ម៉ែត្រ",
+      "category": "unit_word"
+    },
+    "distanceSceneAbsoluteDistanceTemplate": {
+      "english": "The {{secondaryPointControllerLabel}} and the {{primaryPointControllerLabel}} are {{difference}} {{units}} apart.",
+      "khmer": "{{secondaryPointControllerLabel}} និង {{primaryPointControllerLabel}} មានចម្ងាយឃ្លាតពីគ្នា {{difference}} {{units}}។",
+      "category": "distance_description_template",
+      "notes": "Keep placeholders {{secondaryPointControllerLabel}}, {{primaryPointControllerLabel}}, {{difference}}, {{units}}."
+    },
+    "distanceSceneDirectedPositiveDistanceTemplate": {
+      "english": "The {{secondaryPointControllerLabel}} is {{difference}} {{units}} east of the {{primaryPointControllerLabel}}.",
+      "khmer": "{{secondaryPointControllerLabel}} គឺនៅខាងកើត {{primaryPointControllerLabel}} ចម្ងាយ {{difference}} {{units}}។",
+      "category": "distance_description_template",
+      "notes": "Keep placeholders {{secondaryPointControllerLabel}}, {{primaryPointControllerLabel}}, {{difference}}, {{units}}."
+    },
+    "distanceSceneDirectedNegativeDistanceTemplate": {
+      "english": "The {{secondaryPointControllerLabel}} is {{difference}} {{units}} west of the {{primaryPointControllerLabel}}.",
+      "khmer": "{{secondaryPointControllerLabel}} គឺនៅខាងលិច {{primaryPointControllerLabel}} ចម្ងាយ {{difference}} {{units}}។",
+      "category": "distance_description_template",
+      "notes": "Keep placeholders {{secondaryPointControllerLabel}}, {{primaryPointControllerLabel}}, {{difference}}, {{units}}."
+    },
+    "degree": {
+      "english": "degree",
+      "khmer": "ដឺក្រេ",
+      "category": "unit_word"
+    },
+    "degrees": {
+      "english": "degrees",
+      "khmer": "ដឺក្រេ",
+      "category": "unit_word"
+    },
+    "temperatureSceneAbsoluteDistanceTemplate": {
+      "english": "The difference in temperature is {{difference}} {{units}}.",
+      "khmer": "ផលសងសីតុណ្ហភាពគឺ {{difference}} {{units}}។",
+      "category": "distance_description_template",
+      "notes": "Keep placeholders {{difference}}, {{units}}."
+    },
+    "temperatureSceneDirectedPositiveDistanceTemplate": {
+      "english": "Location {{secondaryPointControllerLabel}} is {{difference}} {{units}} hotter than location {{primaryPointControllerLabel}}.",
+      "khmer": "ទីតាំង {{secondaryPointControllerLabel}} ក្តៅជាងទីតាំង {{primaryPointControllerLabel}} ចំនួន {{difference}} {{units}}។",
+      "category": "distance_description_template",
+      "notes": "Keep placeholders {{secondaryPointControllerLabel}}, {{primaryPointControllerLabel}}, {{difference}}, {{units}}."
+    },
+    "temperatureSceneDirectedNegativeDistanceTemplate": {
+      "english": "Location {{secondaryPointControllerLabel}} is {{difference}} {{units}} colder than location {{primaryPointControllerLabel}}.",
+      "khmer": "ទីតាំង {{secondaryPointControllerLabel}} ត្រជាក់ជាងទីតាំង {{primaryPointControllerLabel}} ចំនួន {{difference}} {{units}}។",
+      "category": "distance_description_template",
+      "notes": "Keep placeholders {{secondaryPointControllerLabel}}, {{primaryPointControllerLabel}}, {{difference}}, {{units}}."
+    },
+    "fish": {
+      "english": "fish",
+      "khmer": "ត្រី",
+      "category": "scene_object"
+    },
+    "bird": {
+      "english": "bird",
+      "khmer": "សត្វស្លាប",
+      "category": "scene_object"
+    },
+    "elevationSceneAbsoluteDistanceTemplate": {
+      "english": "The {{secondaryPointControllerLabel}} and the {{primaryPointControllerLabel}} have a vertical distance of {{difference}} {{units}}.",
+      "khmer": "{{secondaryPointControllerLabel}} និង {{primaryPointControllerLabel}} មានគម្លាតបញ្ឈរ {{difference}} {{units}}។",
+      "category": "distance_description_template",
+      "notes": "Keep placeholders {{secondaryPointControllerLabel}}, {{primaryPointControllerLabel}}, {{difference}}, {{units}}."
+    },
+    "elevationSceneDirectedPositiveDistanceTemplate": {
+      "english": "The {{secondaryPointControllerLabel}} is {{difference}} {{units}} above the {{primaryPointControllerLabel}}.",
+      "khmer": "{{secondaryPointControllerLabel}} គឺនៅខាងលើ {{primaryPointControllerLabel}} ចំនួន {{difference}} {{units}}។",
+      "category": "distance_description_template",
+      "notes": "Keep placeholders {{secondaryPointControllerLabel}}, {{primaryPointControllerLabel}}, {{difference}}, {{units}}."
+    },
+    "elevationSceneDirectedNegativeDistanceTemplate": {
+      "english": "The {{secondaryPointControllerLabel}} is {{difference}} {{units}} below the {{primaryPointControllerLabel}}.",
+      "khmer": "{{secondaryPointControllerLabel}} គឺនៅខាងក្រោម {{primaryPointControllerLabel}} ចំនួន {{difference}} {{units}}។",
+      "category": "distance_description_template",
+      "notes": "Keep placeholders {{secondaryPointControllerLabel}}, {{primaryPointControllerLabel}}, {{difference}}, {{units}}."
+    },
+    "variableSubscriptPattern": {
+      "english": "{{variable}}<sub style='font-style:normal'>{{subscript}}</sub>",
+      "khmer": "{{variable}}<sub style='font-style:normal'>{{subscript}}</sub>",
+      "category": "math_pattern",
+      "notes": "HTML subscript pattern for x1/x2/y1/y2. Keep <sub>...</sub> tags and {{variable}}/{{subscript}} placeholders."
+    },
+    "mathSymbolPattern": {
+      "english": "<span style='font-family: \"Times New Roman\", Times, serif;font-style: italic'>{{symbol}}</span>",
+      "khmer": "<span style='font-family: \"Times New Roman\", Times, serif;font-style: italic'>{{symbol}}</span>",
+      "category": "math_pattern",
+      "notes": "HTML italic math wrapper. Keep <span>...</span> and {{symbol}} placeholder."
+    },
+    "displacement": {
+      "english": "Displacement",
+      "khmer": "បម្លាស់ទី",
+      "category": "distance_mode",
+      "notes": "Alternate terminology for directed distance (Preferences + UI when selected)."
+    },
+    "terminology": {
+      "english": "Terminology",
+      "khmer": "បច្ចេកសព្ទ",
+      "category": "preferences_simulation"
+    },
+    "terminologyControlDescription": {
+      "english": "Choose the terminology used to describe the difference between two integers.",
+      "khmer": "ជ្រើសរើសពាក្យបច្ចេកទេសដែលត្រូវប្រើដើម្បីពិពណ៌នាអំពីផលសងរវាងចំនួនគត់ពីរ។",
+      "category": "preferences_simulation",
+      "notes": "Shown in Preferences → Simulation tab."
+    }
+  },
+  "common_visible_ui": {
+    "rangePattern": {
+      "english": "{{lowValue}} to {{highValue}}",
+      "khmer": "{{lowValue}} ដល់ {{highValue}}",
+      "category": "range_selector",
+      "notes": "Generic screen range picker (e.g. \"-10 to 10\"). Keep {{lowValue}} and {{highValue}}. Source: number-line-common."
+    },
+    "pointsOffScale": {
+      "english": "Points<br>off scale!",
+      "khmer": "ចំណុច<br>ហួសមាត្រដ្ឋាន!",
+      "category": "warning_label",
+      "notes": "Shown when a point is dragged off the number-line scale. Keep <br> line break. Source: number-line-common."
+    }
+  },
+  "shared_joist_chrome": {
+    "done": {
+      "english": "Done",
+      "khmer": "រួចរាល់",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "menuItem.options": {
+      "english": "Options…",
+      "khmer": "ជម្រើស…",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "menuItem.about": {
+      "english": "About…",
+      "khmer": "អំពី…",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "menuItem.phetWebsite": {
+      "english": "PhET Website…",
+      "khmer": "គេហទំព័រ PhET…",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "menuItem.reportAProblem": {
+      "english": "Report a Problem…",
+      "khmer": "រាយការណ៍បញ្ហា…",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "menuItem.screenshot": {
+      "english": "Screenshot",
+      "khmer": "រូបថតអេក្រង់",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "menuItem.fullscreen": {
+      "english": "Full Screen",
+      "khmer": "ពេញអេក្រង់",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "menuItem.getUpdate": {
+      "english": "Check for Updates…",
+      "khmer": "ពិនិត្យមើលបច្ចុប្បន្នភាព…",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "menuItem.enhancedSound": {
+      "english": "Extra Sound",
+      "khmer": "សំឡេងបន្ថែម",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "title.settings": {
+      "english": "Settings",
+      "khmer": "ការកំណត់",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "termsPrivacyAndLicensing": {
+      "english": "Terms, Privacy & Licensing",
+      "khmer": "លក្ខខណ្ឌ ឯកជនភាព និងអាជ្ញាបណ្ណ",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "privacyPolicy": {
+      "english": "Privacy Policy",
+      "khmer": "គោលការណ៍ឯកជនភាព",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "donateToPhet": {
+      "english": "Donate to PhET",
+      "khmer": "បរិច្ចាគដល់ PhET",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "license.title": {
+      "english": "License",
+      "khmer": "អាជ្ញាបណ្ណ",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "credits.title": {
+      "english": "Credits",
+      "khmer": "ការទទួលស្គាល់ការចូលរួម",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "credits.leadDesign": {
+      "english": "Lead Design: {0}",
+      "khmer": "អ្នកដឹកនាំការរចនា៖ {0}",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "credits.softwareDevelopment": {
+      "english": "Software Development: {0}",
+      "khmer": "ការអភិវឌ្ឍកម្មវិធី៖ {0}",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "credits.team": {
+      "english": "Team: {0}",
+      "khmer": "ក្រុមការងារ៖ {0}",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "credits.contributors": {
+      "english": "Contributors: {0}",
+      "khmer": "អ្នករួមចំណែក៖ {0}",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "credits.qualityAssurance": {
+      "english": "Quality Assurance: {0}",
+      "khmer": "ការធានាគុណភាព៖ {0}",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "credits.graphicArts": {
+      "english": "Graphic Arts: {0}",
+      "khmer": "សិល្បៈក្រាហ្វិក៖ {0}",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "credits.soundDesign": {
+      "english": "Sound Design: {0}",
+      "khmer": "ការរចនាសំឡេង៖ {0}",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "credits.translation": {
+      "english": "Translation",
+      "khmer": "ការបកប្រែ",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "credits.thanks": {
+      "english": "Thanks",
+      "khmer": "ថ្លែងអំណរគុណ",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "options.title": {
+      "english": "Options",
+      "khmer": "ជម្រើស",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "versionPattern": {
+      "english": "version {0}",
+      "khmer": "កំណែ {0}",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "updates.upToDate": {
+      "english": "This simulation is up to date.",
+      "khmer": "ការពិសោធន៍ក្លែងធ្វើនេះគឺទាន់សម័យហើយ។",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "updates.outOfDate": {
+      "english": "New version available",
+      "khmer": "មានកំណែថ្មី",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "updates.checking": {
+      "english": "Checking for updates…",
+      "khmer": "កំពុងពិនិត្យមើលបច្ចុប្បន្នភាព…",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "updates.offline": {
+      "english": "Unable to check for updates.",
+      "khmer": "មិនអាចពិនិត្យមើលបច្ចុប្បន្នភាពបានទេ។",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "updates.newVersionAvailable": {
+      "english": "There is a new version available: {0}.",
+      "khmer": "មានកំណែថ្មីដែលអាចប្រើបាន៖ {0}។",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "updates.yourCurrentVersion": {
+      "english": "Your current version is: {0}.",
+      "khmer": "កំណែបច្ចុប្បន្នរបស់អ្នកគឺ៖ {0}។",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "updates.getUpdate": {
+      "english": "Get Update…",
+      "khmer": "ធ្វើបច្ចុប្បន្នភាព…",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "updates.noThanks": {
+      "english": "No Thanks",
+      "khmer": "ទេ អរគុណ",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "translation.credits.link": {
+      "english": "Translation Credits",
+      "khmer": "ការទទួលស្គាល់ការបកប្រែ",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "thirdParty.credits.link": {
+      "english": "Third-party Credits",
+      "khmer": "ការទទួលស្គាល់ភាគីទីបី",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "keyboardShortcuts.title": {
+      "english": "Keyboard Shortcuts",
+      "khmer": "ផ្លូវកាត់ក្តារចុច",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "keyboardShortcuts.toGetStarted": {
+      "english": "to get started",
+      "khmer": "ដើម្បីចាប់ផ្តើម",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "simTitleWithScreenNamePattern": {
+      "english": "{{simName}} — {{screenName}}",
+      "khmer": "{{simName}} — {{screenName}}",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "projectorMode": {
+      "english": "Projector Mode",
+      "khmer": "របៀបម៉ាស៊ីនបញ្ចាំង",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.title": {
+      "english": "Preferences",
+      "khmer": "ចំណង់ចំណូលចិត្ត",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.general.title": {
+      "english": "General",
+      "khmer": "ទូទៅ",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.overview.title": {
+      "english": "Overview",
+      "khmer": "ទិដ្ឋភាពទូទៅ",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.simulation.title": {
+      "english": "Simulation",
+      "khmer": "ការពិសោធន៍ក្លែងធ្វើ",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.visual.title": {
+      "english": "Visual",
+      "khmer": "រូបភាព/គំហើញ",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.visual.interactiveHighlights": {
+      "english": "Interactive Highlights",
+      "khmer": "ការរំលេចពណ៌នៅពេលអន្តរកម្ម",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.visual.interactiveHighlightsDescription": {
+      "english": "Add visual highlights for mouse and touch as you interact.",
+      "khmer": "បន្ថែមការរំលេចពណ៌សម្រាប់កណ្ដុរ និងការប៉ះបញ្ជា នៅពេលអ្នកធ្វើអន្តរកម្ម។",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.visual.projectorModeDescription": {
+      "english": "Increase color contrast for better visibility in classrooms.",
+      "khmer": "បង្កើនកម្រិតច្បាស់នៃពណ៌សម្រាប់ភាពងាយមើលឃើញកាន់តែច្បាស់ក្នុងថ្នាក់រៀន។",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.audio.title": {
+      "english": "Audio",
+      "khmer": "សំឡេង",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.audio.sounds.title": {
+      "english": "Sounds",
+      "khmer": "សំឡេង",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.audio.sounds.extraSounds.title": {
+      "english": "Extra Sounds",
+      "khmer": "សំឡេងបន្ថែម",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.audio.audioFeatures.title": {
+      "english": "Audio Features",
+      "khmer": "មុខងារសំឡេង",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.audio.sounds.description": {
+      "english": "Play sonifications and sound effects as you interact.",
+      "khmer": "ចាក់សំឡេងតំណាងទិន្នន័យ និងសំឡេងបែបផែននៅពេលអ្នកធ្វើអន្តរកម្ម។",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.audio.sounds.extraSounds.description": {
+      "english": "Play additional sound that may be helpful for some learners.",
+      "khmer": "ចាក់សំឡេងបន្ថែមដែលអាចមានប្រយោជន៍សម្រាប់អ្នកសិក្សាមួយចំនួន។",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.input.title": {
+      "english": "Input",
+      "khmer": "ការបញ្ចូល",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.localization.title": {
+      "english": "Localization",
+      "khmer": "ការធ្វើមូលដ្ឋានីយកម្ម",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.localization.languageSelection.title": {
+      "english": "Languages",
+      "khmer": "ភាសា",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.localization.languageSelection.description": {
+      "english": "Change language to translate on-screen text. Additional descriptions, when present, remain in English.",
+      "khmer": "ផ្លាស់ប្តូរភាសាដើម្បីបកប្រែអត្ថបទលើអេក្រង់។ ការពិពណ៌នាបន្ថែម (ប្រសិនបើមាន) នឹងនៅតែជាភាសាអង់គ្លេស។",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.general.accessibilityIntro": {
+      "english": "We are adding features to our simulations to make them more inclusive. Some of these features support accessibility for learners with diverse needs and within diverse environments. Explore this menu to review or change the default presentation settings.",
+      "khmer": "យើងកំពុងអភិវឌ្ឍមុខងារបន្ថែមក្នុងការពិសោធន៍ ដើម្បីឱ្យអ្នកសិក្សាទាំងអស់អាចចូលរៀនបានកាន់តែងាយស្រួល។ មុខងារមួយចំនួនជួយគាំទ្រដល់ការប្រើប្រាស់របស់អ្នករៀនដែលមានតម្រូវការពិសេស និងស្ថិតក្នុងស្ថានភាពសិក្សាផ្សេងៗគ្នា។ អ្នកអាចចូលទៅកាន់ម៉ឺនុយនេះ ដើម្បីពិនិត្យ ឬកែសម្រួលការកំណត់បង្ហាញទូទៅតាមការចង់បាន។",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    },
+    "preferences.tabs.general.moreAccessibility": {
+      "english": "Look for Inclusive Features on the Simulations Filter page of the PhET website to find all simulations with available features.",
+      "khmer": "សូមចូលទៅកាន់ទំព័រតម្រង (Filter) លើគេហទំព័រ PhET រួចជ្រើសរើស \"មុខងារបរិយាបន្ន\" ដើម្បីស្វែងរកការពិសោធន៍ទាំងអស់ដែលមានមុខងារជំនួយទាំងនេះ។",
+      "category": "shared_joist_chrome",
+      "notes": "Shared PhET menu/preferences chrome. khmer prefilled from number-play — review and edit if needed. Keep placeholders {{name}}/{0} unchanged."
+    }
+  },
+  "shared_scenery_phet_chrome": {
+    "keyboardHelpDialog.generalNavigation": {
+      "english": "General Navigation",
+      "khmer": "ការរុករកទូទៅ",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-play — review and edit if needed."
+    },
+    "keyboardHelpDialog.basicActions": {
+      "english": "Basic Actions",
+      "khmer": "សកម្មភាពមូលដ្ឋាន",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-play — review and edit if needed."
+    },
+    "keyboardHelpDialog.moveToNextItem": {
+      "english": "Move to next item",
+      "khmer": "រំកិលទៅធាតុបន្ទាប់",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-play — review and edit if needed."
+    },
+    "keyboardHelpDialog.moveToPreviousItem": {
+      "english": "Move to previous item",
+      "khmer": "រំកិលទៅធាតុមុន",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-play — review and edit if needed."
+    },
+    "keyboardHelpDialog.pressButtons": {
+      "english": "Press buttons",
+      "khmer": "ចុចប៊ូតុង",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-play — review and edit if needed."
+    },
+    "keyboardHelpDialog.resetAll": {
+      "english": "Reset All",
+      "khmer": "កំណត់ឡើងវិញទាំងអស់",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-play — review and edit if needed."
+    },
+    "keyboardHelpDialog.exitADialog": {
+      "english": "Exit a dialog",
+      "khmer": "ចាកចេញពីផ្ទាំងប្រអប់",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-play — review and edit if needed."
+    },
+    "keyboardHelpDialog.toggleCheckboxes": {
+      "english": "Toggle checkboxes",
+      "khmer": "បិទ/បើកប្រអប់ធីក",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-play — review and edit if needed."
+    },
+    "keyboardHelpDialog.or": {
+      "english": "or",
+      "khmer": "ឬ",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-play — review and edit if needed."
+    },
+    "keyboardHelpDialog.hyphen": {
+      "english": "-",
+      "khmer": "-",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-play — review and edit if needed."
+    },
+    "keyboardHelpDialog.moveDraggableItems": {
+      "english": "Move Draggable Items",
+      "khmer": "រំកិលធាតុដែលអាចអូសបាន",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-play — review and edit if needed."
+    },
+    "keyboardHelpDialog.move": {
+      "english": "Move",
+      "khmer": "រំកិល",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-play — review and edit if needed."
+    },
+    "keyboardHelpDialog.moveSlower": {
+      "english": "Move slower",
+      "khmer": "រំកិលឱ្យយឺតជាងមុន",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-play — review and edit if needed."
+    },
+    "ResetAllButton.name": {
+      "english": "Reset All",
+      "khmer": "កំណត់ឡើងវិញទាំងអស់",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-play — review and edit if needed."
+    },
+    "SoundToggleButton.name": {
+      "english": "Toggle Sound",
+      "khmer": "បិទ/បើកសំឡេង",
+      "category": "shared_scenery_phet",
+      "notes": "Shared Reset All / keyboard-help chrome. khmer prefilled from number-play — review and edit if needed."
+    }
+  }
+}

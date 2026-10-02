@@ -1,4 +1,4 @@
-// Copyright 2020-2024, University of Colorado Boulder
+// Copyright 2020-2026, University of Colorado Boulder
 
 /**
  * Main entry point for the sim.
@@ -7,11 +7,16 @@
  * @author Saurabh Totey
  */
 
+// Must be first: sets Kantumruy Pro before any PhetFont is constructed at import time.
+import './applyKantumruyFontFamily.js';
+
+import localeProperty from '../../joist/js/i18n/localeProperty.js';
 import PreferencesModel from '../../joist/js/preferences/PreferencesModel.js';
 import Sim from '../../joist/js/Sim.js';
 import simLauncher from '../../joist/js/simLauncher.js';
 import Tandem from '../../tandem/js/Tandem.js';
 import SimulationPreferencesContentNode from './common/view/SimulationPreferencesContentNode.js';
+import createLanguageSwitch from './createLanguageSwitch.js';
 import NLDExploreScreen from './explore/NLDExploreScreen.js';
 import NLDGenericScreen from './generic/NLDGenericScreen.js';
 import NumberLineDistanceStrings from './NumberLineDistanceStrings.js';
@@ -39,13 +44,31 @@ const simOptions = {
   }
 };
 
-// launch the sim - beware that scenery Image nodes created outside of simLauncher.launch() will have zero bounds
-// until the images are fully loaded, see https://github.com/phetsims/coulombs-law/issues/70
-simLauncher.launch( () => {
+const launchSimulation = () => {
+  // Khmer is the default locale for this KruMath fork.
+  localeProperty.value = 'km';
+
   const screens = [
     new NLDExploreScreen( Tandem.ROOT.createTandem( 'exploreScreen' ) ),
     new NLDGenericScreen( Tandem.ROOT.createTandem( 'genericScreen' ) )
   ];
-  const sim = new Sim( numberLineDistanceTitleStringProperty, screens, simOptions );
+  const sim = new Sim( numberLineDistanceTitleStringProperty, screens, {
+    ...simOptions,
+    homeScreenWarningNode: createLanguageSwitch()
+  } );
   sim.start();
+};
+
+const kantumruyFont = new FontFace(
+  'Kantumruy Pro',
+  `url(${new URL( 'images/KantumruyProKhmer.woff2', window.location.href )})`,
+  { weight: '100 900' }
+);
+
+kantumruyFont.load().then( loadedFont => {
+  document.fonts.add( loadedFont );
+  simLauncher.launch( launchSimulation );
+} ).catch( error => {
+  console.error( 'Unable to load Kantumruy Pro; using the default font.', error );
+  simLauncher.launch( launchSimulation );
 } );
